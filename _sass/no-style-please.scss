@@ -19,7 +19,7 @@ body[a="dark"] { @include dark-appearance; }
 // bg color is also needed in html in order to
 // block body's background propagation
 // see: https://stackoverflow.com/a/61265706
-html, body { background: #bc3a41; }
+html, body { background: #7C7294; }
 
 html { height: 100%; }
 
@@ -107,18 +107,6 @@ table, th, td {
   padding: 0.4rem;
 }
 
-code {
-  color: white;
-  background: #780000;
-}
-
-div.highlighter-rouge code {
-  display: block;
-  overflow-x: auto;
-  white-space: pre-wrap;
-  padding: 1rem;
-}
-
 blockquote {
   font-style: italic;
   border: thin solid #780000;
@@ -157,4 +145,86 @@ footer {
 
 .social-links a:hover {
   color: darkred; /* Light color on hover */
+}
+
+/**
+ * Syntax highlighting styles
+ */
+
+code.language-plaintext.highlighter-rouge {
+  background: #780000;
+  padding: 2px;
+}
+
+.highlight, .highlighter-rouge {
+  padding: 5px;
+  overflow-x: auto;
+
+  pre, code {
+    background: #fdf0d5;
+  }
+  .hll { background-color: #515151 }
+  .c { color: #999999 } /* Comment */
+  .err { color: #f2777a } /* Error */
+  .k { color: #cc99cc } /* Keyword */
+  .l { color: #f99157 } /* Literal */
+  .n { color: #cccccc } /* Name */
+  .o { color: #66cccc } /* Operator */
+  .p { color: #7a7a7a } /* Punctuation */
+  .cm { color: #999999 } /* Comment.Multiline */
+  .cp { color: #999999 } /* Comment.Preproc */
+  .c1 { color: #999999 } /* Comment.Single */
+  .cs { color: #999999 } /* Comment.Special */
+  .gd { color: #e5686a } /* Generic.Deleted */
+  .ge { font-style: italic } /* Generic.Emph */
+  .gh { color: #cccccc; font-weight: bold } /* Generic.Heading */
+  .gi { color: #74b474 } /* Generic.Inserted */
+  .gp { color: #999999; font-weight: bold } /* Generic.Prompt */
+  .gs { font-weight: bold } /* Generic.Strong */
+  .gu { color: #66cccc; font-weight: bold } /* Generic.Subheading */
+  .kc { color: #cc99cc } /* Keyword.Constant */
+  .kd { color: #cc99cc } /* Keyword.Declaration */
+  .kn { color: #66cccc } /* Keyword.Namespace */
+  .kp { color: #cc99cc } /* Keyword.Pseudo */
+  .kr { color: #cc99cc } /* Keyword.Reserved */
+  .kt { color: #ffcc66 } /* Keyword.Type */
+  .ld { color: #99cc99 } /* Literal.Date */
+  .m { color: #f99157 } /* Literal.Number */
+  .s { color: #99cc99 } /* Literal.String */
+  .na { color: #6699cc } /* Name.Attribute */
+  .nb { color: #cccccc } /* Name.Builtin */
+  .nc { color: #ffcc66 } /* Name.Class */
+  .no { color: #f2777a } /* Name.Constant */
+  .nd { color: #66cccc } /* Name.Decorator */
+  .ni { color: #cccccc } /* Name.Entity */
+  .ne { color: #f2777a } /* Name.Exception */
+  .nf { color: #6699cc } /* Name.Function */
+  .nl { color: #cccccc } /* Name.Label */
+  .nn { color: #ffcc66 } /* Name.Namespace */
+  .nx { color: #6699cc } /* Name.Other */
+  .py { color: #cccccc } /* Name.Property */
+  .nt { color: #66cccc } /* Name.Tag */
+  .nv { color: #f2777a } /* Name.Variable */
+  .ow { color: #66cccc } /* Operator.Word */
+  .w { color: #cccccc } /* Text.Whitespace */
+  .mf { color: #f99157 } /* Literal.Number.Float */
+  .mh { color: #f99157 } /* Literal.Number.Hex */
+  .mi { color: #f99157 } /* Literal.Number.Integer */
+  .mo { color: #f99157 } /* Literal.Number.Oct */
+  .sb { color: #99cc99 } /* Literal.String.Backtick */
+  .sc { color: #cccccc } /* Literal.String.Char */
+  .sd { color: #999999 } /* Literal.String.Doc */
+  .s2 { color: #99cc99 } /* Literal.String.Double */
+  .se { color: #f99157 } /* Literal.String.Escape */
+  .sh { color: #99cc99 } /* Literal.String.Heredoc */
+  .si { color: #f99157 } /* Literal.String.Interpol */
+  .sx { color: #99cc99 } /* Literal.String.Other */
+  .sr { color: #99cc99 } /* Literal.String.Regex */
+  .s1 { color: #99cc99 } /* Literal.String.Single */
+  .ss { color: #99cc99 } /* Literal.String.Symbol */
+  .bp { color: #cccccc } /* Name.Builtin.Pseudo */
+  .vc { color: #f2777a } /* Name.Variable.Class */
+  .vg { color: #f2777a } /* Name.Variable.Global */
+  .vi { color: #f2777a } /* Name.Variable.Instance */
+  .il { color: #f99157 } /* Literal.Number.Integer.Long */
 }

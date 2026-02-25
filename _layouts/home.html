@@ -1,10 +1,10 @@
 ---
 layout: default
 ---
-<header>
-  <img src="{{ site.favicon }}" style="height: 200px;" alt="Strawberry">
-  
-</header>
+<head>
+    <link rel="icon" href="{{ 'favicon.svg' | relative_url }}" type="image/svg+xml">
+    <img src="{{ 'favicon.svg' | relative_url }}" style="height: 200px;" alt="Tux">
+</head>
 
 {%-include menu_item.html collection=site.data.menu.entries-%}
 
