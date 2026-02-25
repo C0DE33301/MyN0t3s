@@ -1,0 +1,160 @@
+// -------------- THEME SWITCHER -------------- //
+@mixin dark-appearance {
+  filter: invert(1);
+  img {
+    filter: invert(1);
+
+    &.ioda { filter: invert(0); }
+  }
+}
+
+body[a="dark"] { @include dark-appearance; }
+
+
+@media (prefers-color-scheme: dark) {
+  body[a="auto"] { @include dark-appearance; }
+}
+// -------------------------------------------- //
+
+// bg color is also needed in html in order to
+// block body's background propagation
+// see: https://stackoverflow.com/a/61265706
+html, body { background: #bc3a41; }
+
+html { height: 100%; }
+
+body {
+  color: #fdf0d5;
+  font-family: monospace;
+  font-size: 16px;
+  line-height: 1.4;
+  margin: 0;
+  min-height: 100%;
+  overflow-wrap: break-word;
+}
+
+a {
+  color: #5cd85a;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #206b21;
+}
+
+a:visited {
+  color: yellow;
+}
+
+.post-meta { text-align: right; }
+
+h2, h3, h4, h5, h6 { margin-top: 3rem; }
+
+hr { margin: 2rem 0; }
+
+p { margin: 1rem 0; }
+
+ul {
+  list-style-type: none; /* Remove os pontos padrão */
+  padding: 0;
+}
+
+ul li {
+  position: relative;
+  padding-left: 20px; /* Adiciona espaço à esquerda para o símbolo */
+}
+
+ul li::before {
+  content: "⟡"; /* Define o símbolo desejado */
+  position: absolute;
+  left: 0;
+  color: #fdf0d5;
+}
+
+ul ul li {
+  padding-left: 50px; /* Espaço adicional para subitens */
+}
+
+ul ul li::before {
+  content: "♡"; /* Pode ser outro símbolo se desejar */
+  color: #fdf0d5; /* Cor diferente para subitens */
+  padding-left: 20px;
+}
+
+li { margin: 0.4rem 0; }
+
+*:target { background: yellow; }
+
+.w {
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 4rem 2rem;
+}
+
+hr {
+  text-align: center;
+  border: 0;
+  color: #000;
+  &:before { content: '/////' }
+  &:after { content: attr(data-content) '/////' }
+}
+
+table { width: 100%; }
+
+table, th, td {
+  border: thin solid #fdf0d5;
+  border-collapse: collapse;
+  padding: 0.4rem;
+}
+
+code {
+  color: white;
+  background: #780000;
+}
+
+div.highlighter-rouge code {
+  display: block;
+  overflow-x: auto;
+  white-space: pre-wrap;
+  padding: 1rem;
+}
+
+blockquote {
+  font-style: italic;
+  border: thin solid #780000;
+  padding: 1rem;
+
+  p { margin: 0; }
+}
+
+img {
+  max-width: 100%;
+  display: block;
+  margin: 0 auto;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent; /* Optional: Background color */
+  padding: 20px; /* Optional: Padding for footer */
+}
+
+.social-links {
+  list-style: none; /* Remove list styling */
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 0.9375em; /* Space between icons, 15px = 0.9375em */
+}
+
+.social-links a {
+  color: white; /* White icon color */
+  font-size: 1.5em; /* Icon size, 24px = 1.5em */
+  text-decoration: none; /* Remove underline */
+}
+
+.social-links a:hover {
+  color: darkred; /* Light color on hover */
+}
