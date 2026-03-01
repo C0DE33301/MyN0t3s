@@ -1,8 +1,8 @@
-title: Strawberry Blog # name of the site
-author: Strawberry Shortcake # name of site's author
+title: My Blog # name of the site
+author: c0de33301 # name of site's author
 email: someone@something.com # email of site's author
-url: https://linasdias.github.io # root address of the site
-baseurl: "/strawberry-blog" # subpath of the site, e.g. "/blog" (leave it blank "" if you're site shouldn't use a subpath)
+url: https://CODE33301.github.io # root address of the site
+baseurl: "/blog" # subpath of the site, e.g. "/blog" (leave it blank "" if you're site shouldn't use a subpath)
 description: >- # description of the site (multiple lines allowed)
   
 permalink: /:slug.html

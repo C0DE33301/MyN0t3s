@@ -33,3 +33,23 @@ entries:
       show_more: true
       show_more_text: See more posts...
       show_more_url: archive.html
+
+  - title: tryhackme
+    post_list:
+      category: tryhackme
+      show_more: true
+      show_more_text: See more posts...
+      show_more_url: archive.html
+    entries:
+    - title: easy
+      post_list:
+        category: tryhackme.easy
+        show_more: true
+        show_more_text: See more posts...
+        show_more_url: archive.html
+    - title: medium
+      post_list:
+        category: tryhackme.medium
+        show_more: true
+        show_more_text: See more posts...
+        show_more_url: archive.html

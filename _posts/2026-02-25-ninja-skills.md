@@ -1,8 +1,10 @@
 ---
 layout: post
-category: linux
-date: 2026-02-25
+category:
+    - linux
+    - tryhackme.easy
 ---
+<img src="assets/img/Ninja-Skills.png" style="height: 200px;" alt="Ninja Skills">
 
 ## Find files
 - `8V2L`

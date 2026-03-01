@@ -54,31 +54,26 @@ hr { margin: 2rem 0; }
 
 p { margin: 1rem 0; }
 
-ul {
-  list-style-type: none; /* Remove os pontos padrão */
-  padding: 0;
-}
-
-ul li {
-  position: relative;
-  padding-left: 20px; /* Adiciona espaço à esquerda para o símbolo */
-}
+ul { list-style-type: none; padding: 0; }
+ul li { position: relative; padding-left: 20px; }
+ul ul li { padding-left: 50px; }
+ul ul ul li { padding-left: 80px; }
 
 ul li::before {
-  content: "⟡"; /* Define o símbolo desejado */
+  content: "⟡";
   position: absolute;
   left: 0;
   color: #fdf0d5;
 }
-
-ul ul li {
-  padding-left: 50px; /* Espaço adicional para subitens */
-}
-
 ul ul li::before {
-  content: "♡"; /* Pode ser outro símbolo se desejar */
-  color: #fdf0d5; /* Cor diferente para subitens */
+  content: "♡";
+  color: #fdf0d5;
   padding-left: 20px;
+}
+ul ul ul li::before {
+  content: "✦";
+  color: #fdf0d5;
+  padding-left: 40px;
 }
 
 li { margin: 0.4rem 0; }
@@ -99,12 +94,12 @@ hr {
   &:after { content: attr(data-content) '/////' }
 }
 
-table { width: 100%; }
-
 table, th, td {
-  border: thin solid #fdf0d5;
   border-collapse: collapse;
-  padding: 0.4rem;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 
 blockquote {
@@ -151,9 +146,46 @@ footer {
  * Syntax highlighting styles
  */
 
+figure.highlight {
+  margin: 0;
+  padding: 0;
+}
+figure.highlight pre {
+  margin: 0;
+}
+tbody {
+  background-color: #fdf0d5;
+}
+
 code.language-plaintext.highlighter-rouge {
   background: #780000;
   padding: 2px;
+}
+
+pre.highlight {
+    position: relative;
+    counter-reset: line; /* Reset line counter */
+    overflow: auto; /* Handle content overflow */
+}
+
+pre.highlight code {
+    display: block; /* Make code display as a block */
+    white-space: pre; /* Preserve whitespace */
+    padding-left: 40px; /* Add space for line numbers */
+}
+
+pre.highlight code ::before {
+    counter-increment: line; /* Increment line number for each line */
+    content: counter(line); /* Display the current line number */
+    position: absolute;
+    left: 5px; /* Adjust left position */
+    width: 30px; /* Width for line numbers */
+    text-align: right; /* Align line numbers to the right */
+    color: #888; /* Color of line numbers */
+}
+
+pre.highlight code div {
+    counter-increment: line; /* Increment line number */
 }
 
 .highlight, .highlighter-rouge {
@@ -162,6 +194,7 @@ code.language-plaintext.highlighter-rouge {
 
   pre, code {
     background: #fdf0d5;
+    color: #7a7a7a;
   }
   .hll { background-color: #515151 }
   .c { color: #999999 } /* Comment */
