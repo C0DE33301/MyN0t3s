@@ -21,14 +21,14 @@ category:
 - `X1Uy`
 
 ## The base command
-```diff
+{% highlight diff linenos %}
 find / -type f \( -name 8V2L -o -name bny0 -o -name c4ZX -o -name D8B3 -o -name FHl1 -o -name FHl1 -o -name oiMO -o -name PFbD -o -name rmfX -o -name SRSq -o -name uqyw -o -name v2Vb -o -name X1Uy  \) -exec BASE-COMMAND-HERE {} \; 2>>/dev/null
-```
+{% endhighlight %}
 
 ## Q/A
 ### Which of the above files are owned by the best-group group(enter the answer separated by spaces in alphabetical order)
 - Base command: `ls -l`
-```diff
+{% highlight diff linenos %}
 +-rw-rw-r-- 1 new-user best-group 13545 Oct 23  2019 /mnt/D8B3
 -rw-rw-r-- 1 new-user new-user 13545 Oct 23  2019 /mnt/c4ZX
 -rw-rw-r-- 1 new-user new-user 13545 Oct 23  2019 /var/FHl1
@@ -40,15 +40,15 @@ find / -type f \( -name 8V2L -o -name bny0 -o -name c4ZX -o -name D8B3 -o -name 
 -rw-rw-r-- 1 new-user new-user 13545 Oct 23  2019 /etc/ssh/SRSq
 +-rw-rw-r-- 1 new-user best-group 13545 Oct 23  2019 /home/v2Vb
 -rw-rw-r-- 1 newer-user new-user 13545 Oct 23  2019 /X1Uy
-```
+{% endhighlight %}
 ### Which of these files contain an IP address?
 - Base command: `grep --color -EHo '[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}'`
-```diff
+{% highlight diff linenos %}
 +/opt/oiMO:1.1.1.1
-```
+{% endhighlight %}
 ### Which file has the SHA1 hash of 9d54da7584015647ba052173b84d45e8007eba94
 - Base command: `sha1sum`
-```diff
+{% highlight diff linenos %}
 2c8de970ff0701c8fd6c55db8a5315e5615a9575  /mnt/D8B3
 +9d54da7584015647ba052173b84d45e8007eba94  /mnt/c4ZX
 d5a35473a856ea30bfec5bf67b8b6e1fe96475b3  /var/FHl1
@@ -60,16 +60,14 @@ d5a35473a856ea30bfec5bf67b8b6e1fe96475b3  /var/FHl1
 acbbbce6c56feb7e351f866b806427403b7b103d  /etc/ssh/SRSq
 7324353e3cd047b8150e0c95edf12e28be7c55d3  /home/v2Vb
 59840c46fb64a4faeabb37da0744a46967d87e57  /X1Uy
-```
+{% endhighlight %}
 ### Which file contains 230 lines?
-```diff
+{% highlight diff linenos %}
 -The file bny0 does not exist?
-```
+{% endhighlight %}
 ### Which file's owner has an ID of 502?
-```
-ls -ln
-```
-```diff
+- Base command: `ls -ln`
+{% highlight diff linenos %}
 -rw-rw-r-- 1 501 502 13545 Oct 23  2019 /mnt/D8B3
 -rw-rw-r-- 1 501 501 13545 Oct 23  2019 /mnt/c4ZX
 -rw-rw-r-- 1 501 501 13545 Oct 23  2019 /var/FHl1
@@ -81,10 +79,10 @@ ls -ln
 -rw-rw-r-- 1 501 501 13545 Oct 23  2019 /etc/ssh/SRSq
 -rw-rw-r-- 1 501 502 13545 Oct 23  2019 /home/v2Vb
 +-rw-rw-r-- 1 502 501 13545 Oct 23  2019 /X1Uy
-```
+{% endhighlight %}
 ### Which file is executable by everyone?
 - Base command: `ls -l`
-```diff
+{% highlight diff linenos %}
 -rw-rw-r-- 1 new-user best-group 13545 Oct 23  2019 /mnt/D8B3
 -rw-rw-r-- 1 new-user new-user 13545 Oct 23  2019 /mnt/c4ZX
 -rw-rw-r-- 1 new-user new-user 13545 Oct 23  2019 /var/FHl1
@@ -96,4 +94,4 @@ ls -ln
 -rw-rw-r-- 1 new-user new-user 13545 Oct 23  2019 /etc/ssh/SRSq
 -rw-rw-r-- 1 new-user best-group 13545 Oct 23  2019 /home/v2Vb
 -rw-rw-r-- 1 newer-user new-user 13545 Oct 23  2019 /X1Uy
-```
+{% endhighlight %}
