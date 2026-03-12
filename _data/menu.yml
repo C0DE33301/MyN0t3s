@@ -34,6 +34,13 @@ entries:
       show_more_text: See more posts...
       show_more_url: archive.html
 
+  - title: How To, ...
+    post_list:
+      category: howto
+      show_more: true
+      show_more_text: See more posts...
+      show_more_url: archive.html
+
   - title: tryhackme
     post_list:
       category: tryhackme

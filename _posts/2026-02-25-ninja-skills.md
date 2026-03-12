@@ -1,9 +1,10 @@
 ---
 layout: post
-category:
-    - linux
-    - tryhackme.easy
+category: tryhackme.easy
 ---
+<head>
+    <link rel="icon" href="assets/img/Ninja-Skills.png" type="image/svg+xml">
+</head>
 <img src="assets/img/Ninja-Skills.png" style="height: 200px;" alt="Ninja Skills">
 
 ## Find files
@@ -22,7 +23,7 @@ category:
 
 ## The base command
 {% highlight diff linenos %}
-find / -type f \( -name 8V2L -o -name bny0 -o -name c4ZX -o -name D8B3 -o -name FHl1 -o -name FHl1 -o -name oiMO -o -name PFbD -o -name rmfX -o -name SRSq -o -name uqyw -o -name v2Vb -o -name X1Uy  \) -exec BASE-COMMAND-HERE {} \; 2>>/dev/null
+find / -type f \( -name 8V2L -o -name bny0 -o -name c4ZX -o -name D8B3 -o -name FHl1 -o -name oiMO -o -name PFbD -o -name rmfX -o -name SRSq -o -name uqyw -o -name v2Vb -o -name X1Uy  \) -exec BASE-COMMAND-HERE {} \; 2>>/dev/null
 {% endhighlight %}
 
 ## Q/A

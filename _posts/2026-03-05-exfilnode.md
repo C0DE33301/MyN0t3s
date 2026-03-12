@@ -1,9 +1,11 @@
 ---
 layout: post
 category:
-    - linux
     - tryhackme.medium
 ---
+<head>
+    <link rel="icon" href="assets/img/Linux_Disk_Imagev10.png" type="image/svg+xml">
+</head>
 <img src="assets/img/Linux_Disk_Imagev10.png" style="height: 200px;" alt="Disgruntled">
 
 ## Notes

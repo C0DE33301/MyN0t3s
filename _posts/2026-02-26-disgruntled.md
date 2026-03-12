@@ -4,6 +4,9 @@ category:
     - linux
     - tryhackme.easy
 ---
+<head>
+    <link rel="icon" href="assets/img/Disgruntled_1-1--badr.png" type="image/svg+xml">
+</head>
 <img src="assets/img/Disgruntled_1-1--badr.png" style="height: 200px;" alt="Disgruntled">
 
 ## The log files
